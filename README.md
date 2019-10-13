@@ -1,2 +1,2 @@
-# deep_learning_in_python
+# Deep Learning in Python
 Deep Learning Algorithms in Python
