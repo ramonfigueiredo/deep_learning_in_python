@@ -1,0 +1,4 @@
+Note: download the cats and dogs dataset in put the "dataset" folder in the same location of cnn.py
+
+Cats and Dogs dataset:
+https://github.com/ramonfigueiredopessoa/datasets/blob/master/cats_and_dogs
