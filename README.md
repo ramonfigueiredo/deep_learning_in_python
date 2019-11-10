@@ -9,9 +9,9 @@ Deep Learning in Python
 
 ## Artificial Neural Networks
 
-a.  [ann.py](https://github.com/ramonfigueiredopessoa/deep_learning_in_python/blob/master/src/1_artificial_neural_networks/ann.py)
+a.  [ann.py](https://github.com/ramonfigueiredopessoa/deep_learning_in_python/blob/master/1_artificial_neural_networks/ann.py)
 
-* Importing the dataset ([Churn_Modelling.csv](https://github.com/ramonfigueiredopessoa/deep_learning_in_python/blob/master/src/1_artificial_neural_networks/Churn_Modelling.csv))
+* Importing the dataset ([Churn_Modelling.csv](https://github.com/ramonfigueiredopessoa/deep_learning_in_python/blob/master/1_artificial_neural_networks/Churn_Modelling.csv))
 * Encoding categorical data
 * Splitting the dataset into the Training set and Test set
 * Feature Scaling
@@ -296,9 +296,9 @@ Go to [Contents](#contents)
 
 ## Convolutional Neural Networks
 
-a.  [cnn.py](https://github.com/ramonfigueiredopessoa/deep_learning_in_python/blob/master/src/2_convolutional_neural_networks/cnn.py)
+a.  [cnn.py](https://github.com/ramonfigueiredopessoa/deep_learning_in_python/blob/master/2_convolutional_neural_networks/cnn.py)
 
-* Using a dataset with 10000 images of cats and dogs ([cats and dogs dataset](https://github.com/ramonfigueiredopessoa/deep_learning_in_python/blob/master/src/2_convolutional_neural_networks/dataset.txt))
+* Using a dataset with 10000 images of cats and dogs ([cats and dogs dataset](https://github.com/ramonfigueiredopessoa/deep_learning_in_python/blob/master/2_convolutional_neural_networks/dataset.txt))
 	* Training set: 8000 (4000 cat images + 4000 dogs images)
 	* Test set: 2000 (1000 cat images + 1000 dogs images)
 * Creating the Convolutional Neural Network using [Keras](https://keras.io/)
@@ -403,7 +403,7 @@ Epoch 25/25
 
 ### Confusion Matrix (Binary Classification)
 
-![Confusion Matrix: Binary Classification](https://github.com/ramonfigueiredopessoa/deep_learning_in_python/blob/master/src/confusion_matrix-binary_classification.png)
+![Confusion Matrix: Binary Classification](https://github.com/ramonfigueiredopessoa/deep_learning_in_python/blob/master/confusion_matrix-binary_classification.png)
 
 ### True Positive (TP), False Negative (FN), True Negative (TN), False Positive (FP)
 
@@ -452,7 +452,7 @@ F1-Score = (2 * Recall * Precision) / (Recall + Presision)
 
 ### Confusion Matrix (Multi-Class Classification)
 
-![Confusion Matrix: Multi-Class Classification - TP, TN, FP, FN](https://github.com/ramonfigueiredopessoa/deep_learning_in_python/blob/master/src/confusion_matrix-multi-class_classification-TP_TN_FP_FN.jpg)
+![Confusion Matrix: Multi-Class Classification - TP, TN, FP, FN](https://github.com/ramonfigueiredopessoa/deep_learning_in_python/blob/master/confusion_matrix-multi-class_classification-TP_TN_FP_FN.jpg)
 
 ### True Positive (TP), False Negative (FN), True Negative (TN), False Positive (FP)
 
@@ -479,7 +479,7 @@ F1-Score = (2 * Recall * Precision) / (Recall + Presision)
 
 ### Example of metrics calculation using a multi-class confusion matrix
 
-![Confusion Matrix: Multi-Class Classification](https://github.com/ramonfigueiredopessoa/deep_learning_in_python/blob/master/src/confusion_matrix-multi-class_classification.png)
+![Confusion Matrix: Multi-Class Classification](https://github.com/ramonfigueiredopessoa/deep_learning_in_python/blob/master/confusion_matrix-multi-class_classification.png)
 
 * True Positive (TP) of class 1: 14
 * True Positive (TP) of class 2: 15
