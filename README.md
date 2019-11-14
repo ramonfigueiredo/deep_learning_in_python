@@ -27,7 +27,7 @@ a.  [ann.py](https://github.com/ramonfigueiredopessoa/deep_learning_in_python/bl
 * Creating the Confusion Matrix
 * Calculating metrics using the confusion matrix
 * Evaluating, improving and tuning the ANN
-	* Accuracies: 10-fold cross validation
+	* Accuracies: 10-fold cross validation using all processors available
 	* Mean and variance
 
 ### Training the ANN with Stochastic Gradient Descent

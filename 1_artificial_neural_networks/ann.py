@@ -148,7 +148,7 @@ classifier = KerasClassifier(build_fn = build_classifier, batch_size = 10, nb_ep
 accuracies = cross_val_score(estimator = classifier, X = X_train, y = y_train, cv = 10, n_jobs = -1)
 
 idx = 1
-print("\nAccuracies: 10-fold cross validation")
+print("\nAccuracies: 10-fold cross validation using all processors available")
 for acc in accuracies:
 	print(idx, acc)
 	idx = idx + 1
