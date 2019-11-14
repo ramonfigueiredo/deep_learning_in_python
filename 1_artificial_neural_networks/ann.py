@@ -123,6 +123,7 @@ print("Fmeasure = (2 * recall * precision) / (recall + precision): %.2f %%" %(Fm
 
 # Evaluating, improving and tuning the ANN
 print("\n\nEvaluating, improving and tuning the ANN")
+print("Cross validation using all processors available")
 
 # Evaluating the ANN
 from keras.wrappers.scikit_learn import KerasClassifier
@@ -148,7 +149,7 @@ classifier = KerasClassifier(build_fn = build_classifier, batch_size = 10, nb_ep
 accuracies = cross_val_score(estimator = classifier, X = X_train, y = y_train, cv = 10, n_jobs = -1)
 
 idx = 1
-print("\nAccuracies: 10-fold cross validation using all processors available")
+print("\nAccuracies: 10-fold cross validation")
 for acc in accuracies:
 	print(idx, acc)
 	idx = idx + 1

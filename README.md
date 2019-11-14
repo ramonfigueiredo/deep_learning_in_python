@@ -27,6 +27,7 @@ a.  [ann.py](https://github.com/ramonfigueiredopessoa/deep_learning_in_python/bl
 * Creating the Confusion Matrix
 * Calculating metrics using the confusion matrix
 * Evaluating, improving and tuning the ANN
+	* Cross validation using all processors available
 	* Accuracies: 10-fold cross validation using all processors available
 	* Mean and variance
 
@@ -293,6 +294,8 @@ Fmeasure = (2 * recall * precision) / (recall + precision): 93.53 %
 
 
 Evaluating, improving and tuning the ANN
+Cross validation using all processors available
+
 Using TensorFlow backend.
 Epoch 1/1
 Epoch 1/1
