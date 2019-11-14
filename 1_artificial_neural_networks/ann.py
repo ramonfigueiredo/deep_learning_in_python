@@ -119,3 +119,41 @@ print("Precision = TP / (TP + FP): %.2f %%" %(precision*100) )
 
 Fmeasure = (2 * recall * precision) / (recall + precision)
 print("Fmeasure = (2 * recall * precision) / (recall + precision): %.2f %%" %(Fmeasure*100) )
+
+
+# Evaluating, improving and tuning the ANN
+print("\n\nEvaluating, improving and tuning the ANN")
+
+# Evaluating the ANN
+from keras.wrappers.scikit_learn import KerasClassifier
+from sklearn.model_selection import cross_val_score
+from keras.models import Sequential
+from keras.layers import Dense
+
+
+def build_classifier():
+	classifier = Sequential()
+	classifier.add(Dense(output_dim = 6, init = 'uniform', activation = 'relu', input_dim = 11))
+	classifier.add(Dense(output_dim = 6, init = 'uniform', activation = 'relu'))
+	classifier.add(Dense(output_dim = 1, init = 'uniform', activation = 'sigmoid'))
+	classifier.compile(optimizer = 'adam', loss = 'binary_crossentropy', metrics = ['accuracy'])
+	return classifier
+
+
+classifier = KerasClassifier(build_fn = build_classifier, batch_size = 10, nb_epoch = 100)
+# n_jobs : int or None, optional (default=None)
+# The number of CPUs to use to do the computation. 
+# None means 1 unless in a joblib.parallel_backend context. 
+# -1 means using all processors.
+accuracies = cross_val_score(estimator = classifier, X = X_train, y = y_train, cv = 10, n_jobs = -1)
+
+idx = 1
+print("\nAccuracies: 10-fold cross validation")
+for acc in accuracies:
+	print(idx, acc)
+	idx = idx + 1
+
+mean = accuracies.mean()
+print("Mean: ", mean)
+variance = accuracies.std()
+print("Variance: ", variance)
